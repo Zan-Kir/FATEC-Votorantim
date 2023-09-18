@@ -1,4 +1,4 @@
-larg_aposento = float(input("Digite o comprimento do aposento: "))
+larg_aposento = float(input("Digite a largura do aposento: "))
 comp_aposento = float(input("Digite o comprimento do aposento: "))
 altura = 2.80
 abertura_porta = 0.80 * 2.10

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario Fatec </title>
+</head>
+<body>
+    <h2> Roupas XX </h2>
+    <h3> Cadastro </h3>
+    <form>
+        <table>
+            <fieldset>
+                <legend> Dados Pessoais </legend>
+                <label for="nome"> Nome </label>
+                <input type="text" name="nomeCliente" id="nome" maxlength="30" size="50" minlength="10" placeholder="Digite seu nome" required><br>
+                <label for="senha"> Senha </label>
+                <input type="password" name="senhaCliente" id="senha" maxlength="12" placeholder="Senha com letras e números" size="50" minlength="10" required><br>
+                <label for="estadoCivil">Estado Civil</label><br>
+                <input type="radio" name="estaCivil" id="estadoCivil" value="Solteiro"> Solteiro
+                <input type="radio" name="estaCivil" id="estadoCivil" value="Casado"> Casado
+                <input type="radio" name="estaCivil" id="estadoCivil" value="Viúvo"> Viúvo<br>
+                <label for="cor">Cor Favorita</label>
+                <input type="color" name="corFavorita" id="cor"><br>
+                <label for="satisfacao"> Grau de Satisfação com a compra </label><br>
+                1<input type="range" name="satis" id="satisfacao" min="1" max="10" step="2">10
+                <label for="cep">CEP</label>
+                <input type="tel" name="telefone" id="">
+                <label for="tel">Telefone</label>
+                <input type="tel" name="telefone" id="">
+            </fieldset>
+            <fieldset>
+                <legend> Dados de Cobrança </legend>
+                <label for="cidade"> Cidade </label>
+                <input type="text" name="cidadeX" id="cidade" value="Votorantim" disabled>
+                <label for="uf"> UF </label>
+                <select name="ufSelecionado" id="uf">
+                    <optgroup label="Região Norte">
+                        <option value="Amazonas">AM</option>
+                        <option value="Acre">AC</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="Santa Catarina">SC</option>
+                        <option value="Rio Grande do Sul">RS</option>
+                    </optgroup>
+                </select>
+                
+                <input type="checkbox" name="envioExpresso" id="envio" checked>
+                <label for="envio"> Express ? </label>
+
+            </fieldset>
+            <button> Cadastrar </button>
+            <input type="submit" value="Cadastrar">
+        </table>
+    </form>
+</body>
+</html>

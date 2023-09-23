@@ -1,0 +1,47 @@
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.classificacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.umaEstrela:hover {
+    color: #ffcf5c;
+}
+
+.duasEstrelas:hover,
+.duasEstrelas:hover~.umaEstrela {
+    color: #ffcf5c;
+}
+
+.tresEstrelas:hover,
+.tresEstrelas:hover~.duasEstrelas,
+.tresEstrelas:hover~.umaEstrela {
+    color: #ffcf5c;
+}
+
+.quatroEstrelas:hover,
+.quatroEstrelas:hover~.tresEstrelas,
+.quatroEstrelas:hover~.duasEstrelas,
+.quatroEstrelas:hover~.umaEstrela {
+    color: #ffcf5c;
+}
+
+.cincoEstrelas:hover,
+.cincoEstrelas:hover~.quatroEstrelas,
+.cincoEstrelas:hover~.tresEstrelas,
+.cincoEstrelas:hover~.duasEstrelas,
+.cincoEstrelas:hover~.umaEstrela {
+    color: #ffcf5c;
+}
+
+td {
+    border-right: 2px solid;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}

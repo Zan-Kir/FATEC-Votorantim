@@ -1,5 +1,6 @@
 body {
-    margin: 0px 100px 0px 100px
+    margin: 0px 100px 0px 100px;
+    font-family: 'Lato', sans-serif;
 }
 .main {
     display:flex;
@@ -87,6 +88,7 @@ h2 {
 }
 
 h3 {
+    color: #595959;
     margin: inherit;
     padding: 10px 20px;
 }
@@ -100,6 +102,7 @@ h4 {
 }
 
 button {
+    margin:20px 0px 10px 5px;
     padding: 10px 20px;
     border-radius: 22px;
     border: none;

@@ -1,3 +1,7 @@
+.main {
+    display:flex;
+    flex-direction: column;
+}
 .titulo {
     display: flex;
     align-items: center;
@@ -39,9 +43,65 @@
     color: #ffcf5c;
 }
 
-td {
-    border-right: 2px solid;
-    display: inline-flex;
-    align-items: center;
+img {
+    border-bottom: 20px transparent solid ;
+}
+
+#gostoso {
+    width: 80px;
+}
+
+table{
+    padding: 15px 0px 0px;
+    background-color: #f3f3f3;
+}
+
+td { 
     text-align: center;
+    padding:5px;
+}
+
+.bordinha {
+    border-right: 2px solid;
+}
+
+.laranjinha {
+    color:#ff6a28
+}
+
+.tudoGostoso {
+    border-left: 3px solid white;
+}
+.espaco {
+    border-top: 200px solid black;
+}
+
+h2 {
+    color:#ff6a28;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 15px 0px 0px;
+}
+
+h3 {
+    margin: inherit;
+    padding: 10px 20px;
+}
+
+h4 {
+    border-top: 10px solid white
+}
+.lista {
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 22px;
+    border: none;
+    background-color: #ff6a28;
+}
+
+ul {
+    background-color: white;
 }

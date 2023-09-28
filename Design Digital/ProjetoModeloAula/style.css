@@ -1,0 +1,70 @@
+h2 {
+    font-family: "Roboto Slab", Georgia, serif;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 10px;
+    margin-right: 5px;
+    display:inline;
+    background-color: red;
+    color:aliceblue;
+    border-radius: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+section {
+    background-color: aquamarine;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 10px auto 30px;
+}
+
+video, audio {
+    width: 40%;
+    display: block;
+    margin:auto auto 10px;
+    border-radius: 10px;
+}
+
+/* .estiloGeral {
+    width: 40%;
+    display: block;
+    margin:auto auto 10px;
+    border-radius: 10px;
+    weight:200px;
+}  */
+
+audio {
+    display: inline;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    align-items: flex-end;
+    overflow: auto;
+    text-align: center;
+}
+
+div {
+    display:flex;
+    justify-content: space-between;
+}

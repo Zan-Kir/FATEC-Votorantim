@@ -1,0 +1,17 @@
+h2 {
+    color: rgba(48, 19, 209, 0.968);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section {
+    border: 1px solid aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+
+

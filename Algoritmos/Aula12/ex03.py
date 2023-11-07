@@ -8,5 +8,4 @@ for i in range(1, 6):
 set1 = set(lista1)
 set2 = set(lista2)
 
-
 print(set1.union(set2))

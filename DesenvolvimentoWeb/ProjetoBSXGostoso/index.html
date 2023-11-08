@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria XGostoso</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <form class="row g-3">
+            <div class="alert alert-primary" role="alert">
+                <i class="ri-store-3-line"></i> Hamburgueria XGostoso
+            </div>
+            <div class="col-md-6">
+                <label for="inputNomeCli" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" id="inputNomeCli">
+            </div>
+            <div class="col-md-6">
+                <label for="inputTelefone" class="form-label">Telefone</label>
+                <input type="number" class="form-control" id="inputTelefone">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCombo" class="form-label">Combos</label>
+                <select id="inputCombo" class="form-select">
+                    <option selected disabled hidden="true">Selecione...</option>
+                    <option value="20">XSaudável</option>
+                    <option value="30">XBacon</option>
+                    <option value="50">XTudo</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label">Adicionais</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridBacon" value="2">
+                    <label class="form-check-label" for="gridBacon">Bacon</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="gridCheddar" value="2">
+                    <label class="form-check-label" for="gridCheddar">Cheddar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="gridPicles" value="2">
+                    <label class="form-check-label" for="gridPicles">Picles</label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label">Entrega ?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="entrega" id="entregaBalcao" value="0" checked>
+                    <label class="form-check-label" for="entregaBalcao">Balcão</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="entrega" id="entregaViagem" value="10">
+                    <label class="form-check-label" for="entregaViagem">Para Viagem </label>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-primary me-md-2" type="button" onclick="calcular()"><i class="ri-calculator-line"></i>
+                    Calcular</button>
+                <button class="btn btn-primary me-md-2" type="button"><i class="ri-shopping-basket-2-line"></i> Novo
+                    Pedido</button>
+                <button class="btn btn-primary me-md-2" type="button"><i class="ri-file-list-3-line"></i>
+                    Recibo</button>
+            </div>
+            <div class="mb-3">
+                <label for="totalValor" class="form-label">Total a Pagar:</label>
+                <input type="text" class="form-control" id="totalValor" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="descricao" class="form-label">Descrição do Pedido:</label>
+                <textarea class="form-control" id="descricao" rows="6" disabled></textarea>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

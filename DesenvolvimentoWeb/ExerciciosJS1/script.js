@@ -2,7 +2,6 @@ function calcularSalario() {
     let salario = Number(document.getElementById(`salario`).value)
     let aumento = Number(document.getElementById(`aumento`).value)
     salario += salario * aumento/100
-    console.log(salario)
     document.getElementById(`resultadoSalario`).innerHTML = `O novo salário é de R$${salario.toFixed(2)}.`
 }
 
@@ -29,8 +28,9 @@ function calcularIdade() {
     let semanas = dias / 7
     let horas = dias * 24
     let minutos = horas * 60
+    let idadeFutura = 2050 - anoNasc
     document.getElementById(`resultadoIdade`).innerHTML = `Resultado no console.`
-    console.log(`Idade: ${idade}.\n Meses: ${meses}. \n Dias: ${dias}. \n Semanas: ${semanas.toFixed(0)}. \n Horas: ${horas}. \n Minutos: ${minutos}.`)
+    console.log(`Idade: ${idade}.\n Meses: ${meses}. \n Dias: ${dias}. \n Semanas: ${semanas.toFixed(0)}. \n Horas: ${horas}. \n Minutos: ${minutos}. \n Idade em 2050: ${idadeFutura}.`)
 }
 
 function consumoGasolina() {
@@ -44,7 +44,7 @@ function calcularSalarioLiquido() {
     let salarioHR = document.getElementById(`salarioHR`).value
     let horasTrabalhadas = 62
     let horasNormais = salarioHR * 40
-    let horasExtras = (horasTrabalhadas - 40) * salarioHR
+    let horasExtras = (horasTrabalhadas - 40) * salarioHR * 3
     let descontoRefeicao = (Math.ceil(62 / 8)) * 1.5
     let salarioBruto = horasNormais + horasExtras
     let salarioLiquido = horasNormais + horasExtras - descontoRefeicao

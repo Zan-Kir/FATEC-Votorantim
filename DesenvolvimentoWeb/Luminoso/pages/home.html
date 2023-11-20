@@ -25,10 +25,10 @@
     <nav class="navBar">
       <img src="../img/whiteLogo.png" alt="">
       <ul>
-        <li><a href="http://" class="barItem">Home</a></li>
-        <li><a href="http://" class="barItem">Sobre</a></li>
-        <li><a href="http://" class="barItem">Parceiros</a></li>
-        <li><a href="http://" class="barItem">Blog</a></li>
+        <li><a href="./home.html" class="barItem" onclick="paginaAtiva(home)">Home</a></li>
+        <li><a href="http://" class="barItem" onclick="paginaAtiva(sobre)">Sobre</a></li>
+        <li><a href="http://" class="barItem" onclick="paginaAtiva(parceiros)">Parceiros</a></li>
+        <li><a href="http://" class="barItem" onclick="paginaAtiva(blog)">Blog</a></li>
         <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
         <label for="buscar"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"
             fill="none">
@@ -50,24 +50,50 @@
   <main>
     <section>
       <div class="slides">
-        <img class="slideItem" src="../img/banner-home-1.png" style="width:100%">
-        <img class="slideItem" src="../img/banner-home-1.png" style="width:100%">
-        <img class="slideItem" src="../img/banner-home-1.png" style="width:100%">
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br>
-          incididunt ut labore et dolore magna<br> aliqua ut enim ad minim veniam. <br><br><button
-            class="saibaMais">Saiba Mais</button></p>
-        <p class="texto">BBB<br><br><br><br><br><button class="saibaMais">Saiba Mais</button></p>
-        <p class="texto">CCC<br><br><br><br><br><button class="saibaMais">Saiba Mais</button></p>
-        <div class="mudarDiv">
-          <span class="divAtual" onclick="mostrarDiv(1)"><span class="circulo"></span></span>
-          <span class="divAtual" onclick="mostrarDiv(2)"><span class="circulo"></span></span>
-          <span class="divAtual" onclick="mostrarDiv(3)"><span class="circulo"></span></span>
+        <div class="carousel">
+          <div class="pagina">
+            <div class="conteudo">
+              <img class="slideItem" src="../img/banner-home-1.png">
+              <div class="divTexto">
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br>
+                  incididunt ut labore et dolore magna<br> aliqua ut enim ad minim veniam. <br><br><button
+                    class="saibaMais botaoGeral">Saiba Mais</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="pagina">
+            <div class="conteudo">
+              <img class="slideItem" src="../img/banner-home-1.png">
+              <div class="divTexto">
+                <p class="texto">BBB<br><br><br><br><br><button class="saibaMais botaoGeral">Saiba Mais</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="pagina">
+            <div class="conteudo">
+              <img class="slideItem" src="../img/banner-home-1.png">
+              <div class="divTexto">
+                <p class="texto">CCC<br><br><br><br><br><button class="saibaMais botaoGeral">Saiba Mais</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="mudarDiv">
+            <span class="divAtual" onclick="mostrarDiv(1)"><span class="circulo"></span></span>
+            <span class="divAtual" onclick="mostrarDiv(2)"><span class="circulo"></span></span>
+            <span class="divAtual" onclick="mostrarDiv(3)"><span class="circulo"></span></span>
+          </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="a">
-        <p>pqp essa porra nao aparece</p>
+      <div class="metas">
+        <div class="metasAlcancadas">
+          <h2>Presentes em 10 estados</h2>
+          <h2>750+ contratos firmados</h2>
+          <h2>1000+ empresas cadastradas</h2>
+          <h2>1500+ empregos gerados</h2>
+        </div>
+        <button class="facaParte botaoGeral">Faça parte</button>
       </div>
     </section>
   </main>

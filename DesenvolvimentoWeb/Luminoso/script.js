@@ -1,5 +1,16 @@
 {
-
+    // nem precisava mas funciona
+    /* Adiciona evento para cada item do menu */ 
+    const barItems = document.getElementsByClassName("barItem");
+    for (let i = 0; i < barItems.length; i++) {
+         barItems[i].addEventListener("click", destacaItemNavbar)
+        }
+        function destacaItemNavbar(evento) {
+            for (let i = 0; i < barItems.length; i++) {
+                barItems[i].className = barItems[i].className.replace(" ativo", "")
+            } 
+            evento.target.className += " ativo"
+        }
 }
 
 {

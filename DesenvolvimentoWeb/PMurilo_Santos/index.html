@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Prova DesenvolvimentoWeb</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastro</h1>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Informe o nome" maxlength="30" size="30">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha"><br><br>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" readonly><br><br>
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" name="idade"><br><br>
+        <label for="termos">Aceita os Termos...:</label>
+        <input type="radio" name="termos" value="1">Sim
+        <input type="radio" name="termos" value="2">Não<br><br>
+        <input type="button" value="Cadastrar" id="cadastrar">
+        <p id="cadastro"></p>
+    </form>
+</body>
+</html>

@@ -7,7 +7,7 @@ elemento.addEventListener('click', async function(){
         alert("Informe o CEP");
     else {                  // /\D deixa somente digitos, /g de forma global, substitui por '' espaço
         var cep = valor.replace(/\D/g, '');
-                        // / pode ser qualquer digito de 0-9 e precisa ter 8 ^pra iniciar o regex e $ para finalizar
+                        // / pode ser qualquer digito de 0-9 e precisa ter 8 ^ pra iniciar o regex e $ para finalizar
         var validacep = /^[0-9]{8}$/;
    
         if(validacep.test(cep)) {

@@ -55,3 +55,4 @@ elemento.addEventListener('click', async function () {
 )
 
 // apiKey = digite sua API Key aqui
+
